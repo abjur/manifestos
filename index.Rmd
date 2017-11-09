@@ -27,7 +27,7 @@ options(OutDec = ',')
 #options(knitr.table.format = 'markdown')
 ```
 
-```{r include_table, echo = F}
+```{r include_table, eval=FALSE}
 library(tidyverse)
 library(knitr)
 library(abjTemplates)
