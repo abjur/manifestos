@@ -7,6 +7,7 @@ pandoc_version: 1.17.2
 addons:
   apt:
     packages:
+      - texlive-full
       - texlive-lang-portuguese
 
 before_script:
