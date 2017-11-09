@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Manifestos</title>
+  <meta name="description" content="Template de relatório da ABJ.">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Manifestos" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Template de relatório da ABJ." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Manifestos" />
+  
+  <meta name="twitter:description" content="Template de relatório da ABJ." />
+  
+
+<meta name="author" content="Associação Brasileira de Jurimetria">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manifestos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="manifesto-por-dados-abertos" class="section level1">
+<h1><span class="header-section-number">Capítulo 1</span> Manifesto por dados abertos</h1>
+<div id="introducao-motivacao" class="section level2">
+<h2><span class="header-section-number">1.1</span> Introdução (motivação)</h2>
+<p>Não se muda aquilo que se ignora</p>
+<p>É estratégico (tribunais e hospitais)</p>
+<p>É grande</p>
+<p>Os dados são públicos</p>
+<p>Mesmo assim, temos problemas de privacidade</p>
+<p>Queremos usar para fazer pesquisa, para adm de tribunais e políticas públicas.</p>
+<!-- ----------------------------------------------------------------------- -->
+</div>
+<div id="desafios" class="section level2">
+<h2><span class="header-section-number">1.2</span> Desafios</h2>
+<p>Existem inúmeras ferramentas públicas e privadas para busca e recuperação de processos. Os sistemas são eficazes, mas são todos voltados para a busca de informações individuais. Se uma pessoa tiver o número identificador, ela achará informações do processo. Se precisar uma lista de processos, poderá utilizar ferramentas de busca.</p>
+<p>Cientistas de dados, no entanto, precisam ter a possibilidade de exportar os dados completos ou algum recorte da população para planilhas. Existem muitos exemplos de páginas úteis para cientistas de dados, como IpeaData, Datasus, IBGE, entre outros.</p>
+<p>Também é possível utilizar <em>Application Programming Interfaces</em> (APIs) para obter dados de <em>tweets</em>, publicações no Facebook, entre outros. O importante é notar que os sistemas voltados para análise de dados são em sua maioria voltados para extração de informações de muitos indivíduos. Os dados são organizados para análise e não para consulta individual. Muitas vezes é necessário limpar a base, mas isso faz parte do fluxo da ciência de dados <span class="citation">(Wickham and Grolemund <a href="#ref-wickham2016r">2016</a>)</span>.</p>
+<p>Na área do direito, o pesquisador fica numa situação complicada, pois precisa de dados da população ou de uma amostra, com linhas e colunas, numa planilha padronizada. No entanto, tudo o que consegue encontrar são documentos individuais, listagens de processos e arquivos em formato fechado, como o <em>Portable Document Format</em> (PDF).</p>
+<p>Muitas vezes os dados estão disponíveis em páginas web mas é muito demorado buscar todos os casos que precisamos manualmente ou através de ofícios. Por isso, é usual construir <em>web scrapers</em>, que são robôs que baixam as páginas automaticamente e depois as tranformam em dados estruturados.</p>
+<p>Atualmente, a utilização <em>web scrapers</em> é indispensável em estudo jurimétricos. As pesquisas realizadas pela ABJ foram fortemente influenciadas por essas ferramentas.</p>
+<p>Contudo, são raros os profissionais que dominam esse conhecimento. A ABJ disponibiliza abertamente todo seu aparato técnico,<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> mas as ferramentas não são capazes de resolver todos os problemas. Além disso, os sistemas dos Tribunais colocam impedimentos técnicos de acesso, dificultando a execução de pesquisas que poderiam ser benéficas para os próprios Tribunais.</p>
+<p>Há muitos exemplos em que simplesmente não é possível obter as informações que necessitamos. Em muitos casos a única forma de acessar os dados é a partir da Lei de Acesso à Informação. Apesar da LAI ser um grande avanço, utilizá-la para todas as demandas é ineficiente pois congestiona os setores administrativos e técnicos dos Tribunais.</p>
+<p>A solução mais eficaz para o problema de acesso aos dados envolve modificar os sites dos Tribunais, permitindo extrações de dados e disponibilizar APIs que permitam os pesquisadores de buscar as informações públicas de maneira segura e organizada.</p>
+<p>Essas ferramentas são simples de construir para entidades como os Tribunais, que geralmente têm equipes de Tecnologia da Informação de altíssima qualidade. A solução não causaria impactos negativos nos sistemas; pelo contrário: ao permitir que os dados sejam baixados de forma programática, é possível controlar o volume de dados transferido por unidade de tempo, evitando que os servidores fiquem sobrecarregados.</p>
+</div>
+<div id="desafio" class="section level2">
+<h2><span class="header-section-number">1.3</span> Desafio</h2>
+<p>Em teoria, a solução da API é perfeita. O problema é que falta uma padronização concreta para que</p>
+<p>Desafio: como conectar sistemas, sem necessariamente modificar a estrutura dos tribunais?</p>
+<p>O erro está em querer alinhamento de sistemas, e não alinhamento focado em pesquisa.</p>
+<p>As pesquisas readequam o sistema</p>
+<!-- ----------------------------------------------------------------------- -->
+</div>
+<div id="solucao" class="section level2">
+<h2><span class="header-section-number">1.4</span> Solução</h2>
+<p>Partir do processo de realização de pesquisas. Ciclo da ciência de dados?</p>
+<p>A pesquisa no direito com fins de elaboração de políticas públicas ou administração de tribunais seguem padrões específicos. Na história da ABJ, executamos pesquisas em praticamente todas as esferas do direito. Já pesquisamos sobre direito tributário, processos de adoção, direito do consumidor, processos de homicício, falências e recuperações, entre muitos outros. Com base nessa experiência e com base no que observamos na Society of Empirical Legal Studies, montamos uma lista do que acreditamos ser os objetos de pesquisa mais comuns no direito.</p>
+<div id="contagens-e-valores-por-temaassunto" class="section level3">
+<h3><span class="header-section-number">1.4.1</span> Contagens e valores por tema/assunto</h3>
+<p>Trata-se do tema mais comum em pesquisa do direito. Queremos contar processos por tipo, por valor, por tribunal etc. Por exemplo, Justiça em Números.</p>
+</div>
+<div id="tempos-e-complexidade-processual" class="section level3">
+<h3><span class="header-section-number">1.4.2</span> Tempos e complexidade processual</h3>
+</div>
+<div id="resultados-e-reformas-dos-processos-judiciais" class="section level3">
+<h3><span class="header-section-number">1.4.3</span> Resultados e reformas dos processos judiciais</h3>
+<p>Para entender o que é o direito, precisamos entender o que os juízes decidem. Queremos saber se as decisões variam muito dentro de um mesmo tema, se existe discriminação e se é possível</p>
+</div>
+<div id="analise-de-impacto-regulatorio" class="section level3">
+<h3><span class="header-section-number">1.4.4</span> análise de impacto regulatório</h3>
+<p>O que essas pesquisas tem em comum?</p>
+<p>Estrutura de dados: infos básicas, partes, movimentações, decisões, documentos.</p>
+<!-- ----------------------------------------------------------------------- -->
+</div>
+</div>
+<div id="propostas" class="section level2">
+<h2><span class="header-section-number">1.5</span> Propostas</h2>
+<p>Não queremos que os tribunais mandem, queremos poder extrair dos tribunais</p>
+<p>Proposta de como fazer: API pública, camada de APIs</p>
+<p>Passo 1: Disponibilização de API pública de infosbasicas, partes e movimentacoes</p>
+<p>Dados do Selo Justiça em números!</p>
+<p>Passo 2: Diário oficial digital no CKAN - arrumar distribuicao</p>
+<p>Passo 3: input/output: O que foi pedido, o que foi concedido?</p>
+<p>Passo 4: Ligando processos, partes, advogados, teses e magistrados</p>
+<p>Passo 5: Integração com polícia, defensoria e ministério público, entre outras (para segpub)</p>
+<!-- ----------------------------------------------------------------------- -->
+</div>
+<div id="aplicacoes" class="section level2">
+<h2><span class="header-section-number">1.6</span> Aplicações</h2>
+<p>Parágrafo introdutório</p>
+<ul>
+<li>Para o judiciário (assuntos processuais e padronização)</li>
+<li>Para o cidadão (acesso à justiça)</li>
+<li>Para empresas (acompanhamento processual)</li>
+<li>Para legaltechs (acelerar fluxos de mediação)</li>
+<li>Para magistrados (tomada de decisão, conexão com outros sistemas)</li>
+<li>Para advogados (acompanhamento processual e jurisprudência)</li>
+</ul>
+<p>Economia de bilhões. Como? Criar uma conta</p>
+<!-- ----------------------------------------------------------------------- -->
+</div>
+<div id="proximos-passos" class="section level2">
+<h2><span class="header-section-number">1.7</span> Próximos passos</h2>
+<p>A solução precisa ser comandada pelo DPJ-CNJ</p>
+<p>Juntar com Selo Justiça em Números</p>
+<p>Os tribunais já recebem diversas propostas. É preciso alinhar e limpar</p>
+<ol style="list-style-type: decimal">
+<li>Coordenação: DPJ</li>
+<li>equipe técnica
+<ul>
+<li>pesquisadores da ABJ e do DPJ</li>
+<li>arquitetos de TI dos sistemas atuais (saj, pje)</li>
+</ul></li>
+<li>equipe articuladora
+<ul>
+<li>representantes da OAB, GEAL-CRASP, conselheiros do CNJ</li>
+<li>Representantes dos tribunais superiores</li>
+<li>universidades: Insper, GV, PUC, USP</li>
+</ul></li>
+</ol>
+<p>Parágrafo de finalização</p>
+<!-- ----------------------------------------------------------------------- -->
+
+<div id="refs" class="references">
+<div>
+<p>Wickham, Hadley, and Garrett Grolemund. 2016. “R for Data Science.” Sebastopol, CA: O’Reilly. http:// r4ds. had. co. nz.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-wickham2016r">
+<p>Wickham, Hadley, and Garrett Grolemund. 2016. “R for Data Science.” Sebastopol, CA: O’Reilly. http:// r4ds. had. co. nz.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Disponíveis nos links:<a href="https://github.com/abjur" class="uri">https://github.com/abjur</a> (códigos genéricos da ABJ), <a href="https://github.com/courtsbr" class="uri">https://github.com/courtsbr</a> (web scrapers), e <a href="https://github.com/decryptr" class="uri">https://github.com/decryptr</a> (ferramentas para quebrar CAPTCHAs).<a href="manifesto-por-dados-abertos.html#fnref1">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/yihui/bookdown-crc/edit/master/01-dados.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
