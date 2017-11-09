@@ -1,0 +1,11 @@
+Package: manifestos
+Title: Placeholder
+Version: 0.0.0.9000
+Authors@R: person("Julio", "Trecenti", email = "jtrecenti@abj.org.br", role = c("aut", "cre"))
+Description: Placeholder.
+Depends: R (>= 3.4.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: rmarkdown,
+    bookdown
