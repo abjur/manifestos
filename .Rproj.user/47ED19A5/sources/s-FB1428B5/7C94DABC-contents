@@ -7,5 +7,4 @@ Depends: R (>= 3.4.2)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: rmarkdown,
-    bookdown
+Imports: rmarkdown

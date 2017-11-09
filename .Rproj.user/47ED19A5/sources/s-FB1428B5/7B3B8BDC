@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510261592026.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "87332129",
+    "id" : "7B3B8BDC",
+    "lastKnownWriteTime" : 1510264666,
+    "last_content_update" : 1510264666697,
+    "path" : "~/abjur/manifestos/01-dados.Rmd",
+    "project_path" : "01-dados.Rmd",
+    "properties" : {
+        "cursorPosition" : "137,80",
+        "docOutlineVisible" : "1",
+        "scrollLine" : "98"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

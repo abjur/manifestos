@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510266661390.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2894132655",
+    "id" : "1F0D6735",
+    "lastKnownWriteTime" : 1510265448,
+    "last_content_update" : 1510265448,
+    "path" : "~/abjur/manifestos/_deploy.sh",
+    "project_path" : "_deploy.sh",
+    "properties" : {
+        "cursorPosition" : "8,36",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "sh"
+}

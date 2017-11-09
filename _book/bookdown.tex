@@ -1,0 +1,393 @@
+\documentclass[]{report}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={Manifestos},
+            pdfauthor={Associação Brasileira de Jurimetria},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{fullwidth}
+\usepackage{indentfirst}
+\usepackage[left=2.5cm, right=2.5cm, top=4cm, bottom=3.8cm]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\RequirePackage{xcolor} % [dvipsnames]
+\definecolor{halfgray}{gray}{0.55} % chapter numbers will be semi transparent .5 .55 .6 .0
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webbrown}{rgb}{.6,0,0}
+%\definecolor{Maroon}{cmyk}{0, 0.87, 0.68, 0.32}
+%\definecolor{RoyalBlue}{cmyk}{1, 0.50, 0, 0}
+%\definecolor{Black}{cmyk}{0, 0, 0, 0}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{spverbatim}
+\usepackage{lipsum}
+\usepackage{natbib}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{background}
+
+\newcommand{\prestadorEmpresaFoot}{Associação Brasileira de Jurimetria}
+\newcommand{\prestadorEmpresa}{Associação Brasileira de Jurimetria}
+\newcommand{\prestadorRepr}{Marcelo Guedes Nunes}
+\newcommand{\prestadorEnderecoFoot}{Rua Gomes de Carvalho, 1356, 2º andar. CEP 04547-005 - São Paulo, SP, Brasil.}
+\newcommand{\prestadorEndereco}{Rua Gomes de Carvalho, 1356, 2º andar}
+\newcommand{\prestadorEnderecoComp}{CEP 04547-005 - São Paulo, SP, Brasil}
+\newcommand{\prestadorSite}{\url{http://abj.org.br}}
+\newcommand{\prestadorEmail}{contato@abj.org.br}
+% \includegraphics[trim=left bottom right top, clip]{file}
+\newcommand{\logo}{\includegraphics[width=0.21\textwidth, trim=0cm 0cm 0cm 11.1cm, clip]{imgs/logo_abj.png}}
+
+\newcommand{\tipoTrabalho}{}
+\newcommand{\numero}{XXX}
+
+\newcommand{\clienteEmpresa}{XXX}
+\newcommand{\clienteEndereco}{XXX}
+\newcommand{\clienteEnderecoComp}{XXX}
+\newcommand{\clienteRepr}{XXX}
+\newcommand{\clienteEmail}{XXX}
+
+% \fancypagestyle{firststyle}
+% {
+%     \pagestyle{fancy}
+%     \lhead{\thepage}
+%     \chead{}
+%     \rhead{\logo{}}
+%     \cfoot{
+%         \footnotesize{\prestadorEmpresaFoot{}} \\
+%         \footnotesize{\prestadorEnderecoFoot{}} \\
+%         \footnotesize{\prestadorSite{}}
+%     }
+%     \renewcommand{\headrulewidth}{0.5pt}
+%     \renewcommand{\footrulewidth}{0.5pt}
+%     \setlength{\headsep}{.5in}
+% }
+%
+% \pagestyle{firststyle}
+
+\setlength{\parindent}{2em}
+% \setlength{\parskip}{1em}
+% \renewcommand{\baselinestretch}{1.2}
+% % \usepackage{palatino}
+% \renewcommand{\familydefault}{\sfdefault} % sans serif
+% \fontfamily{ppl}\selectfont
+
+%\renewcommand{\baselinestretch}{1.4}
+
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=1,
+color=black,
+contents={\begin{tikzpicture}[remember picture,overlay]
+\node at ([xshift=-4.35cm,yshift=-2.5cm] current page.north east) % Adjust the position of the logo.
+{\logo}; % logo goes here
+\end{tikzpicture}}
+}
+
+\usepackage{float}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+
+\title{Manifestos}
+\author{Associação Brasileira de Jurimetria}
+\date{09 de novembro de 2017}
+
+\begin{document}
+\maketitle
+
+\chapter*{Manifestos}\label{manifestos}
+
+
+Esse documento contém os manifestos da ABJ.
+
+\chapter{Manifesto por dados abertos}\label{manifesto-por-dados-abertos}
+
+\section{Introdução (motivação)}\label{introducao-motivacao}
+
+Não se muda aquilo que se ignora
+
+É estratégico (tribunais e hospitais)
+
+É grande
+
+Os dados são públicos
+
+Mesmo assim, temos problemas de privacidade
+
+Queremos usar para fazer pesquisa, para adm de tribunais e políticas
+públicas.
+
+\section{Desafios}\label{desafios}
+
+Existem inúmeras ferramentas públicas e privadas para busca e
+recuperação de processos. Os sistemas são eficazes, mas são todos
+voltados para a busca de informações individuais. Se uma pessoa tiver o
+número identificador, ela achará informações do processo. Se precisar
+uma lista de processos, poderá utilizar ferramentas de busca.
+
+Cientistas de dados, no entanto, precisam ter a possibilidade de
+exportar os dados completos ou algum recorte da população para
+planilhas. Existem muitos exemplos de páginas úteis para cientistas de
+dados, como IpeaData, Datasus, IBGE, entre outros.
+
+Também é possível utilizar \emph{Application Programming Interfaces}
+(APIs) para obter dados de \emph{tweets}, publicações no Facebook, entre
+outros. O importante é notar que os sistemas voltados para análise de
+dados são em sua maioria voltados para extração de informações de muitos
+indivíduos. Os dados são organizados para análise e não para consulta
+individual. Muitas vezes é necessário limpar a base, mas isso faz parte
+do fluxo da ciência de dados \citep{wickham2016r}.
+
+Na área do direito, o pesquisador fica numa situação complicada, pois
+precisa de dados da população ou de uma amostra, com linhas e colunas,
+numa planilha padronizada. No entanto, tudo o que consegue encontrar são
+documentos individuais, listagens de processos e arquivos em formato
+fechado, como o \emph{Portable Document Format} (PDF).
+
+Muitas vezes os dados estão disponíveis em páginas web mas é muito
+demorado buscar todos os casos que precisamos manualmente ou através de
+ofícios. Por isso, é usual construir \emph{web scrapers}, que são robôs
+que baixam as páginas automaticamente e depois as tranformam em dados
+estruturados.
+
+Atualmente, a utilização \emph{web scrapers} é indispensável em estudo
+jurimétricos. As pesquisas realizadas pela ABJ foram fortemente
+influenciadas por essas ferramentas.
+
+Contudo, são raros os profissionais que dominam esse conhecimento. A ABJ
+disponibiliza abertamente todo seu aparato técnico \footnote{Disponíveis
+  nos links:\url{https://github.com/abjur} (códigos genéricos da ABJ),
+  \url{https://github.com/courtsbr} (web scrapers), e
+  \url{https://github.com/decryptr} (ferramentas para quebrar CAPTCHAs).},
+mas as ferramentas não são capazes de resolver todos os problemas. Além
+disso, os sistemas dos Tribunais colocam impedimentos técnicos de
+acesso, dificultando a execução de pesquisas que poderiam ser benéficas
+para os próprios Tribunais.
+
+Há muitos exemplos em que simplesmente não é possível obter as
+informações que necessitamos. Em muitos casos a única forma de acessar
+os dados é a partir da Lei de Acesso à Informação. Apesar da LAI ser um
+grande avanço, utilizá-la para todas as demandas é ineficiente pois
+congestiona os setores administrativos e técnicos dos Tribunais.
+
+A solução mais eficaz para o problema de acesso aos dados envolve
+modificar os sites dos Tribunais, permitindo extrações de dados e
+disponibilizar APIs que permitam os pesquisadores de buscar as
+informações públicas de maneira segura e organizada.
+
+Essas ferramentas são simples de construir para entidades como os
+Tribunais, que geralmente têm equipes de Tecnologia da Informação de
+altíssima qualidade. A solução não causaria impactos negativos nos
+sistemas; pelo contrário: ao permitir que os dados sejam baixados de
+forma programática, é possível controlar o volume de dados transferido
+por unidade de tempo, evitando que os servidores fiquem sobrecarregados.
+
+\section{Desafio}\label{desafio}
+
+Em teoria, a solução da API é perfeita. O problema é que falta uma
+padronização concreta para que
+
+Desafio: como conectar sistemas, sem necessariamente modificar a
+estrutura dos tribunais?
+
+O erro está em querer alinhamento de sistemas, e não alinhamento focado
+em pesquisa.
+
+As pesquisas readequam o sistema
+
+\section{Solução}\label{solucao}
+
+Partir do processo de realização de pesquisas. Ciclo da ciência de
+dados?
+
+A pesquisa no direito com fins de elaboração de políticas públicas ou
+administração de tribunais seguem padrões específicos. Na história da
+ABJ, executamos pesquisas em praticamente todas as esferas do direito.
+Já pesquisamos sobre direito tributário, processos de adoção, direito do
+consumidor, processos de homicício, falências e recuperações, entre
+muitos outros. Com base nessa experiência e com base no que observamos
+na Society of Empirical Legal Studies, montamos uma lista do que
+acreditamos ser os objetos de pesquisa mais comuns no direito.
+
+\subsection{Contagens e valores por
+tema/assunto}\label{contagens-e-valores-por-temaassunto}
+
+Trata-se do tema mais comum em pesquisa do direito. Queremos contar
+processos por tipo, por valor, por tribunal etc. Por exemplo, Justiça em
+Números.
+
+\subsection{Tempos e complexidade
+processual}\label{tempos-e-complexidade-processual}
+
+\subsection{Resultados e reformas dos processos
+judiciais}\label{resultados-e-reformas-dos-processos-judiciais}
+
+Para entender o que é o direito, precisamos entender o que os juízes
+decidem. Queremos saber se as decisões variam muito dentro de um mesmo
+tema, se existe discriminação e se é possível
+
+\subsection{análise de impacto
+regulatório}\label{analise-de-impacto-regulatorio}
+
+O que essas pesquisas tem em comum?
+
+Estrutura de dados: infos básicas, partes, movimentações, decisões,
+documentos.
+
+\section{Propostas}\label{propostas}
+
+Não queremos que os tribunais mandem, queremos poder extrair dos
+tribunais
+
+Proposta de como fazer: API pública, camada de APIs
+
+Passo 1: Disponibilização de API pública de infosbasicas, partes e
+movimentacoes
+
+Dados do Selo Justiça em números!
+
+Passo 2: Diário oficial digital no CKAN - arrumar distribuicao
+
+Passo 3: input/output: O que foi pedido, o que foi concedido?
+
+Passo 4: Ligando processos, partes, advogados, teses e magistrados
+
+Passo 5: Integração com polícia, defensoria e ministério público, entre
+outras (para segpub)
+
+\section{Aplicações}\label{aplicacoes}
+
+Parágrafo introdutório
+
+\begin{itemize}
+\tightlist
+\item
+  Para o judiciário (assuntos processuais e padronização)
+\item
+  Para o cidadão (acesso à justiça)
+\item
+  Para empresas (acompanhamento processual)
+\item
+  Para legaltechs (acelerar fluxos de mediação)
+\item
+  Para magistrados (tomada de decisão, conexão com outros sistemas)
+\item
+  Para advogados (acompanhamento processual e jurisprudência)
+\end{itemize}
+
+Economia de bilhões. Como? Criar uma conta
+
+\section{Próximos passos}\label{proximos-passos}
+
+A solução precisa ser comandada pelo DPJ-CNJ
+
+Juntar com Selo Justiça em Números
+
+Os tribunais já recebem diversas propostas. É preciso alinhar e limpar
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Coordenação: DPJ
+\item
+  equipe técnica
+
+  \begin{itemize}
+  \tightlist
+  \item
+    pesquisadores da ABJ e do DPJ
+  \item
+    arquitetos de TI dos sistemas atuais (saj, pje)
+  \end{itemize}
+\item
+  equipe articuladora
+
+  \begin{itemize}
+  \tightlist
+  \item
+    representantes da OAB, GEAL-CRASP, conselheiros do CNJ
+  \item
+    Representantes dos tribunais superiores
+  \item
+    universidades: Insper, GV, PUC, USP
+  \end{itemize}
+\end{enumerate}
+
+Parágrafo de finalização
+
+\bibliography{bibliography/book.bib,bibliography/packages.bib}
+
+\end{document}
