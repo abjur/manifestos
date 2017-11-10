@@ -102,10 +102,14 @@
 <p>A solução mais eficaz para o problema de acesso aos dados envolve modificar os sites dos Tribunais, permitindo extrações de dados e disponibilizar APIs que permitam os pesquisadores de buscar as informações públicas de maneira segura e organizada.</p>
 <p>Essas ferramentas são simples de construir para entidades como os Tribunais, que geralmente têm equipes de Tecnologia da Informação de altíssima qualidade. A solução não causaria impactos negativos nos sistemas; pelo contrário: ao permitir que os dados sejam baixados de forma programática, é possível controlar o volume de dados transferido por unidade de tempo, evitando que os servidores fiquem sobrecarregados.</p>
 </div>
-<div id="desafio" class="section level2">
-<h2><span class="header-section-number">1.3</span> Desafio</h2>
-<p>Em teoria, a solução da API é perfeita. O problema é que falta uma padronização concreta para que</p>
-<p>Desafio: como conectar sistemas, sem necessariamente modificar a estrutura dos tribunais?</p>
+<div id="selo-justica-em-numeros" class="section level2">
+<h2><span class="header-section-number">1.3</span> Selo Justiça em Números</h2>
+<p>Em teoria, a solução da API funciona muito bem. O problema é que falta articulação para implementar soluções padronizadas em todos os tribunais brasileiros. Por isso, faz sentido pensar numa solução centralizada que recebe e consolida os dados dos tribunais. Essa solução já existe.</p>
+<p>O Modelo de Interoperabilidade de Dados do Poder Judiciário (MNI) é um padrão genérico para processos judiciais. O padrão foi introduzido em 2010 pelo CNJ, com última atualização em 2014. O MNI contém todas as informações básicas de interesse dos processos judiciais, bem como partes e movimentações.</p>
+<p>Adequar um relatório ao MNI é uma tarefa complicada. O único incentivo de um Tribunal de atender ao MNI seria para atender a critérios de boa governança de dados. Na prática, os Tribunais acabariam não enviando os dados em formato adequado.</p>
+<p>O Selo Justiça em números é uma forma de corrigir esse problema. A partir de um sistema de pontuação que avalia a qualidade dos dados, o Selo cria um mecanismo de incentivo para que os Tribunais busquem uma boa governança de dados. Um Tribunal com selo Diamante, com nota mais alta, teria seu nome divulgado nas redes e teria um conjunto de benefícios do CNJ.</p>
+<p>O Selo é um mecanismo eficiente para realizar uma integração contínua com os Tribunais. A análise dos dados enviados poderá indicar falhas nos sistemas dos Tribunais, que poderão ser corrigidos. Além disso, para obter maior qualidade dos dados, bastaria mudar a metodologia de pontuação do Selo.</p>
+<p>Para que o Selo se torne a solução desejada, faltam apenas dois detalhes: i) API pública para acesso aos dados do Selo e ii) Criação de APIs para extração dos dados de cada tribunal. Sobre (i), bastaria montar uma API para acessar os dados do Selo, solução que acreditamos ser uma realidade em breve. Para (ii), uma alternativa seria incluir na pontuação do Selo a criação de uma API REST para acesso aos dados dos TJs na direção inversa. Posteriormente, os tribunais poderiam liberar essas APIs publicamente também, finalizando o processo de abertura de dados.</p>
 <p>O erro está em querer alinhamento de sistemas, e não alinhamento focado em pesquisa.</p>
 <p>As pesquisas readequam o sistema</p>
 <!-- ----------------------------------------------------------------------- -->
